@@ -1,0 +1,19 @@
+@mixin lineAfter {
+  content: "";
+  position: absolute;
+  background: $secondary;
+}
+
+@mixin btn($bg-color: transparent) {
+  height: 45px;
+  font-size: 13px;
+  padding: 10px 35px;
+  background-color: $bg-color;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@mixin shadow {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+}

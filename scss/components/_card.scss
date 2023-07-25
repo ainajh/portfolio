@@ -1,0 +1,22 @@
+.s-card {
+  @include shadow;
+  padding: calc($base-padding * 5);
+  width: 100%;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.8);
+  }
+  .s-card-title {
+    font-weight: 700;
+    font-size: calc($font-size-md * 1.2);
+    margin-bottom: calc($base-margin * 2);
+  }
+  .s-card-description {
+    color: $secondary;
+    font-size: $font-size-md;
+    text-align: justify;
+    margin-bottom: calc($base-margin * 5);
+  }
+}

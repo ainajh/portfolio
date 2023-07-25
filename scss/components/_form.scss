@@ -1,0 +1,36 @@
+.s-form {
+  min-height: 50px;
+  background: $black_two;
+  width: 100%;
+  display: flex;
+  &:focus-within .s-prepend {
+    background: $primary;
+    i {
+      color: $black;
+    }
+  }
+  .s-prepend {
+    min-width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    background: linear-gradient(159deg, #252532 0%, #23232d 100%);
+    transition: all 1s ease;
+    i {
+      font-size: 15px;
+    }
+  }
+  input.s-input,
+  textarea.s-input {
+    border: none;
+    width: calc(100% - 50px);
+    height: 100%;
+    background: transparent;
+    padding: $base-padding * 2;
+    font-family: $font-base;
+  }
+  textarea.s-input {
+    min-height: 80px;
+  }
+}

@@ -1,0 +1,32 @@
+.app-menu-bar-fix {
+  @include shadow;
+  left: 290px;
+  position: absolute;
+  top: 0;
+  background: #20202a;
+  width: calc(100% - 290px);
+  height: 60px;
+  z-index: 999;
+  transition: 0.55s ease-in-out;
+  padding: $base-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    li {
+      padding: 0.5em 1em;
+      a {
+        color: $primary;
+        text-decoration: none;
+        i {
+          color: $primary;
+          width: 20px;
+        }
+      }
+    }
+  }
+}

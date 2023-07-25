@@ -1,0 +1,46 @@
+$primary: #ffc107;
+$secondary: #8c8c8e;
+$error:#e61919;
+$info: #e6e619;
+
+$black_one: #191923;
+$black_two: #20202a;
+$black_three: #1e1e28;
+$black: #000;
+$white: #fff;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "cream": #f2eee8,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "gray": #777,
+  "black": black,
+  "white": white,
+  "blue-think": #0ea5e9,
+);
+
+$font-base: "Poppins", sans-serif;
+
+//font-size
+$base-font-size: 13px;
+$font-size-xs: $base-font-size * 0.5;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-md: $base-font-size;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+// spacing
+$base-padding: 0.25rem;
+$base-margin: 0.25rem;
+
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
