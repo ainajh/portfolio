@@ -69,3 +69,9 @@ $(".custom-option").on("click", function () {
     .text($(this).text());
 });
 
+var typed = new Typed(".typing", {
+  strings: ["", "Web developer", "Fullstack JS", "Front-end Developer","Integrator Website"],
+  typeSpeed: 200,
+  BackSpeed: 100,
+  loop: true,
+});

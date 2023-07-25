@@ -3392,8 +3392,12 @@ p {
 .app-content section.home .content .app-home-text {
   font-size: 19.5px;
 }
-.app-content section.home .content .app-home-text .wrap {
+.app-content section.home .content .app-home-text .wrap,
+.app-content section.home .content .app-home-text .typing {
   font-size: 19.5px;
+}
+.app-content section.home .content .app-home-text .typing {
+  color: #ffc107;
 }
 .app-content section.home .content .app-home-text i {
   font-style: normal;
@@ -3441,6 +3445,10 @@ p {
 }
 .app-content section.work .item:hover .info {
   display: block;
+}
+.app-content section.work .item:hover .show-btn a {
+  display: block;
+  z-index: 1;
 }
 .app-content section.work .item:hover .show-btn i {
   display: block;
@@ -3579,14 +3587,39 @@ p {
 .app-content section.resume .resume-item .timline .timline-title {
   font-weight: 700;
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-transform: capitalize;
   color: #ffc107;
 }
 .app-content section.resume .resume-item .timline .timline-text {
   line-height: 25px;
   text-align: justify;
+}
+.app-content section.resume .resume-item .timline .timline-text > * {
   color: #8c8c8e;
+  line-height: 25px;
+  text-align: justify;
+}
+.app-content section.resume .resume-item .timline .timline-text ul li {
+  margin-bottom: 15px;
+}
+.app-content section.resume .resume-item .timline .timline-text ul li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #ffc107;
+}
+.app-content section.resume .resume-item .timline .timline-link {
+  text-decoration: underline;
+}
+.app-content section.resume .resume-item .timline .timline-link a:hover {
+  color: #ffc107;
+}
+.app-content section.resume .resume-item .timline .timline-link a:hover i {
+  color: #ffc107;
+}
+.app-content section.resume .resume-item .timline .timline-link a i {
+  margin-left: 5px;
 }
 
 @keyframes fadeIn {
